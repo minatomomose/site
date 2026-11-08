@@ -1,0 +1,304 @@
+
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Profile</title>
+
+    <!-- 連結 CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <audio id="background-music" src="media/20261108_195720436 (1).m4r" autoplay loop preload="auto"></audio>
+
+    <!-- =========================
+         01. 開場動畫 INTRO SCREEN
+    ========================== -->
+
+    <div id="intro-screen" aria-label="網站開場動畫">
+
+        <div class="intro-stars" aria-hidden="true">
+            ✦　✧　✦　✧　✦
+        </div>
+
+        <div class="intro-content">
+
+            <p class="intro-subtitle">
+                WELCOME TO MY UNIVERSE
+            </p>
+
+            <h1 class="intro-title">
+                My Profile
+            </h1>
+
+            <div class="intro-line"></div>
+
+            <p class="intro-message">
+                A WORLD MADE OF DREAMS AND COLORS
+            </p>
+
+            <p class="intro-start">
+                ✦ LET'S START ✦
+            </p>
+
+        </div>
+
+        <button id="skip-intro" type="button" aria-label="跳過開場動畫">
+            SKIP ▶
+        </button>
+
+    </div>
+
+
+    <!-- =========================
+         02. 星空背景
+    ========================== -->
+
+    <div class="stars"></div>
+    <div id="floating-particles" aria-hidden="true"></div>
+
+
+    <!-- =========================
+         03. 導覽列 NAVIGATION
+    ========================== -->
+
+    <header>
+
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#favorite">FAVORITE</a></li>
+                <li><a href="#gallery">GALLERY</a></li>
+                <li><a href="#future">推し活</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- =========================
+         04. 首頁 HOME
+    ========================== -->
+
+    <main>
+
+        <section id="home" class="hero">
+
+            <div class="hero-content">
+
+                <figure class="hero-character">
+                    <img
+                        src="media/IMG_3934-iloveimg-compressed.png"
+                        alt="穿著紅色洋裝的全身角色插畫"
+                        fetchpriority="high"
+                    >
+                </figure>
+
+                <a href="#home" class="hero-logo">MY UNIVERSE ✦</a>
+
+                <p class="hero-subtitle">
+                    WELCOME TO MY WORLD
+                </p>
+
+                <h1>
+                    My Profile
+                </h1>
+
+                <p class="hero-description">
+                    A LITTLE WORLD FULL OF DREAMS,
+                    COLORS AND POSSIBILITIES.
+                </p>
+
+                <a href="#about" class="main-button">
+                    DISCOVER MORE ✦
+                </a>
+
+            </div>
+
+            <div class="hero-decoration">
+                ✦
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             05. 關於我 ABOUT
+        ========================== -->
+
+        <section id="about" class="section">
+
+            <div class="section-title">
+                <p>01 / INTRODUCTION</p>
+                <h2>ABOUT ME</h2>
+            </div>
+
+            <div class="about-content">
+
+                <img class="about-photo" src="media/IMG_5286-iloveimg-compressed.jpeg" alt="個人照片">
+
+                <div class="about-text">
+
+                    <h3>Hello, Nice to Meet You!</h3>
+
+                    <div class="profile-info">
+                        <p>NAME : 許耘瑋</p>
+                        <p>HOBBY : DESIGN / MUSIC / ART</p>
+                        <p>PERSONALITY : INTROVERTED / NOT VERY SOCIABLE</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             06. 我的喜好 FAVORITE
+        ========================== -->
+
+        <section id="favorite" class="section">
+
+            <div class="section-title">
+                <p>02 / MY INTERESTS</p>
+                <h2>MY FAVORITE</h2>
+            </div>
+
+            <div class="favorite-grid">
+
+                <a class="favorite-card" href="https://music.youtube.com/playlist?list=PLMaGAH2iefuMoKqVX1UQWeNrZHF__S6GP&amp;si=RBIdy6gDP6ihHmU6">
+                    <div class="card-icon">♫</div>
+                    <h3>MUSIC</h3>
+                    <p>喜歡的音樂、歌手與歌曲。</p>
+                </a>
+
+                <a class="favorite-card" href="#gallery">
+                    <div class="card-icon">✧</div>
+                    <h3>ART</h3>
+                    <p>繪畫、插畫與各種創作。</p>
+                </a>
+
+                <a class="favorite-card" href="#future">
+                    <div class="card-icon">♡</div>
+                    <h3>HOBBY</h3>
+                    <p>生活中喜歡做的事情。</p>
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             07. 作品集 GALLERY
+        ========================== -->
+
+        <section id="gallery" class="section">
+
+            <div class="section-title">
+                <p>03 / MY CREATIONS</p>
+                <h2>MY GALLERY</h2>
+            </div>
+
+            <div class="gallery-grid">
+
+                <div class="gallery-item">
+                    <img class="gallery-image" src="media/IMG_3935-iloveimg-compressed.png" alt="Artwork 01">
+                    <p>MY ARTWORK 01</p>
+                </div>
+
+                <div class="gallery-item">
+                    <img class="gallery-image" src="media/IMG_3936-iloveimg-compressed.png" alt="Artwork 02">
+                    <p>MY ARTWORK 02</p>
+                </div>
+
+                <div class="gallery-item">
+                    <img class="gallery-image" src="media/IMG_3922-iloveimg-compressed.jpeg" alt="Artwork 03">
+                    <p>MY ARTWORK 03</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             08. 推し活 OSHIKATSU
+        ========================== -->
+
+        <section id="future" class="section future-section">
+
+            <div class="section-title">
+                <p>04 / MY FAVORITE</p>
+                <h2>推し活</h2>
+            </div>
+
+            <p class="oshikatsu-intro">
+                推し活讓平凡的日常多了期待與幸福感。分享喜歡的事物、
+                收藏珍貴回憶的每一刻，都讓我感到快樂，也成為繼續前進的力量。
+            </p>
+
+            <div class="gallery-grid oshikatsu-grid">
+                <div class="gallery-item">
+                    <img class="gallery-image" src="media/IMG_5316-iloveimg-compressed.jpeg" alt="推し活照片 1">
+                </div>
+                <div class="gallery-item">
+                    <img class="gallery-image" src="media/AD3E5E7B-E899-4D10-A9C8-907B3FBBCC79-iloveimg-compressed.jpeg" alt="推し活照片 2">
+                </div>
+                <div class="gallery-item">
+                    <img class="gallery-image" src="media/IMG_5292-iloveimg-compressed.jpeg" alt="推し活照片 3">
+                </div>
+                <div class="gallery-item">
+                    <img class="gallery-image" src="media/IMG_5012-iloveimg-compressed.jpeg" alt="推し活照片 4">
+                </div>
+                <div class="gallery-item">
+                    <img class="gallery-image" src="media/IMG_5013-iloveimg-compressed.jpeg" alt="推し活照片 5">
+                </div>
+                <div class="gallery-item">
+                    <img class="gallery-image" src="media/IMG_4978-iloveimg-compressed.jpeg" alt="推し活照片 6">
+                </div>
+                <div class="gallery-item">
+                    <img class="gallery-image" src="media/IMG_4871-iloveimg-compressed.jpeg" alt="推し活照片 7">
+                </div>
+                <div class="gallery-item">
+                    <img class="gallery-image" src="media/IMG_5581-iloveimg-compressed.jpeg" alt="推し活照片 8">
+                </div>
+                <div class="gallery-item">
+                    <img class="gallery-image" src="media/IMG_4113-iloveimg-compressed.jpeg" alt="推し活照片 9">
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         09. 頁尾 FOOTER
+    ========================== -->
+
+    <footer>
+
+        <p>THANK YOU FOR VISITING MY WORLD ✦</p>
+
+        <p>
+            © <span id="year"></span>
+            MY MAGICAL WORLD
+        </p>
+
+    </footer>
+
+
+    <!-- 連結 JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
